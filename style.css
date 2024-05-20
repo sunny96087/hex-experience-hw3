@@ -1,0 +1,15 @@
+
+
+
+/* footer */
+.bg {
+    background: url('./images/footer/footer-sm.png') no-repeat center center;
+    background-size: cover;
+  }
+  
+  @media screen and (min-width: 512px) {
+    .bg {
+      background: url('./images/footer/footer-lg.png') no-repeat center center;
+      background-size: cover;
+    }
+  }
