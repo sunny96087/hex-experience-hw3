@@ -95,7 +95,8 @@ img {
   .tags {
     gap: 16px;
   }
-  
+} 
+
 /* header */
 .navbar{
   font-family: "Noto Sans TC", sans-serif;
