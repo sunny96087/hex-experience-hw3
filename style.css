@@ -104,33 +104,27 @@ img {
   line-height: 1.5;
   font-weight: 400;
   width: 100%;
+  max-width: 1296px;
+  margin:0 auto;
   position: fixed;
   opacity: 0.95;
   background-color: #ffffff;
 }
 .header-content{
   width: 100%;
-  position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 32px 312px;
 }
-
 .logo{
   padding: 7px;
-  position: absolute;
-  left: 25%;
-  top: 25%;
+  margin-right: 16.25%;
 }
 
 .logo a img{
-  width: 76px;
+  max-width:100%;
 }
 .nav-bar-list{
-  position: absolute;
-  left: 50%;
-  top: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -215,25 +209,15 @@ img {
 }
 
 @media(max-width: 768px) {
-  .navbar-btn {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 25%;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-    span {
-      font-size: 40px;
-    }
-  }
-  .logo{
-    position: absolute;
-    left: 0;
+  .header-content{
+    padding: 8px 0px;
+    height: 64px;
+    justify-content:space-between; 
+    position: relative;
   }
   .nav-bar-list {
     position:absolute;
-    top: 75px;
+    top: 64px;
     left:0;
     width: 100%;
     opacity: 1;
@@ -242,10 +226,16 @@ img {
     justify-content:center;
     align-items:center;
   }
-  .header-content{
-    padding: 8px 0px;
-    justify-content:space-between; 
+  .navbar-btn {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    span {
+      font-size: 40px;
+    }
   }
+  
 }
 
 
