@@ -238,11 +238,52 @@ img {
   
 }
 
+/* banner */
+.banner{
+  padding: 80px 0px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.banner h1{
+  text-align: center;
+  font-size: 24px;
+  color: #1E1E1E;
+  line-height: 1.5;
+  font-weight: 400;
+  gap: 16px;
+  position: relative;
+}
+
+.banner-top h1::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 10px;
+  background-color: red;
+  /* background-image: url("./images/banner/banner-top.png"); */
+  left: 15%;
+}
 
 /* footer */
 .bg {
   background: url("./images/footer/footer-sm.png") no-repeat center center;
   background-size: cover;
+}
+.footer-info{
+  gap: 24px;
+}
+.footer-info a{
+  padding: 8px 24px;
+  border: 1px solid #C1C1C1;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+}
+.footer-info a:hover{
+  background-color: #000;
+  color: #FFFFFF;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 512px) {
